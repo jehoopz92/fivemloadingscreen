@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  background: url(https://img.gta5-mods.com/q85-w800/images/forests-of-v-the-creek/7385fc-4.png)
+    no-repeat;
+  /* Keep the inherited background full size. */
+  background-attachment: fixed;
+  background-size: cover;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Baloo Chettan 2', cursive;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.15);
+  margin: 0;
+  backdrop-filter: blur(5px);
+}
+
+.welcome-con {
+  width: 50vw;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+}
+.banner {
+  background-color: rgb(60, 158, 93);
+  width: 50vw;
+  color: white;
+  padding: 5px;
+}
+p {
+  padding: 20px !important;
+}
+.logo-con {
+  background-color: #f2f2f2;
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  position: relative;
+  left: 45%;
+  padding: 5px;
+}
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.progress-value {
+  animation: load 3s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  background: rgb(60, 158, 93);
+  height: 30px;
+  width: 0;
+  margin: 3rem auto;
+}
+
+@keyframes load {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 68%;
+  }
+}
